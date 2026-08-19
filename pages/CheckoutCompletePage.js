@@ -7,6 +7,6 @@ export class CheckoutCompletePage extends BasePage {
         this.backHomeButton = page.locator('[data-test="back-to-products"]');
     }
     async getCompletionMessage() {
-        return await this.completeHeader.textContent();
+        return this.completeHeader.textContent();
     }
 }
